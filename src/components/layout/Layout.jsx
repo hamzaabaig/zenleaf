@@ -2,6 +2,7 @@ import React from "react";
 import BlogHeader from "../blogHeader/BlogHeader";
 import HeroSection from "../hero/HeroSection";
 import Slider from "../slider/Slider";
+import BlogArchive from "../blogArchive/BlogArchive";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
       <BlogHeader />
       <HeroSection />
       <Slider />
+      <BlogArchive />
     </div>
   );
 };

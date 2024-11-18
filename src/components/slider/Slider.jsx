@@ -23,7 +23,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mb-5 sticky top-0 bg-white z-30">
       <div className="flex gap-5 p-4 items-center overflow-hidden">
         {slideText.map((text, index) => (
           <a
