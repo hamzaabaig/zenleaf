@@ -3,7 +3,7 @@ import cardImg from "../../assets/images/blogArchiveImg.jpg";
 
 const BlogArchive = () => {
   return (
-    <div>
+    <div className="col-span-9">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-4">
         <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
           <img className="rounded-md" src={cardImg} />

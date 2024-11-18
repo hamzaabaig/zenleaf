@@ -3,6 +3,7 @@ import BlogHeader from "../blogHeader/BlogHeader";
 import HeroSection from "../hero/HeroSection";
 import Slider from "../slider/Slider";
 import BlogArchive from "../blogArchive/BlogArchive";
+import LeftSidebar from "../common/leftSidebar/LeftSidebar";
 
 const Layout = () => {
   return (
@@ -10,7 +11,10 @@ const Layout = () => {
       <BlogHeader />
       <HeroSection />
       <Slider />
-      <BlogArchive />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <LeftSidebar />
+        <BlogArchive />
+      </div>
     </div>
   );
 };
