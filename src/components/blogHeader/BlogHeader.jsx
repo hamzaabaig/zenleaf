@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogHeader = () => {
   return (
-    <div className="mb-5">
+    <div className="mb-7">
       <ul className="flex items-center py-2">
         <li>
           <a className="flex items-center" href="#">
