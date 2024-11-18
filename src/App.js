@@ -1,7 +1,6 @@
+import Layout from "./components/layout/Layout";
 function App() {
-  return (
-    <h1 className="bg-blue-100 text-blue-400 text-center">Hello tailwind</h1>
-  );
+  return <Layout />;
 }
 
 export default App;
