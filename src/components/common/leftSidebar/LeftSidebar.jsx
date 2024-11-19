@@ -112,7 +112,7 @@ const LeftSidebar = () => {
       </div>
       <span className="font-bold ml-3">Share</span>
       <div className="flex flex-col gap-4">
-        <button className="flex justify-start items-center hover:bg-[#1877F2] hover:text-white transition-all duration-200 border border-gray-200 rounded-md py-4 px-7">
+        <button className="flex justify-start items-center active:bg-[#215293] hover:bg-[#346cb6] hover:text-white transition-all duration-200 border border-gray-200 rounded-md py-4 px-7">
           <svg
             width="24"
             height="24"
@@ -127,7 +127,7 @@ const LeftSidebar = () => {
           </svg>
           <span className="font-bold">Post To Facebook</span>
         </button>
-        <button className="flex justify-start items-center hover:bg-[#1DA1F2] hover:text-white transition-all duration-200 border border-gray-200 rounded-md py-4 px-7">
+        <button className="flex justify-start items-center hover:bg-[#1DA1F2] active:bg-[#028ee3] hover:text-white transition-all duration-200 border border-gray-200 rounded-md py-4 px-7">
           <svg
             class="mr-6 inline size-6"
             role="img"
