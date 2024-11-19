@@ -25,14 +25,14 @@ const Slider = () => {
 
   const handleNextSlide = () => {
     if (currentIndex < slideText.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex((prevIndex) => prevIndex + 1);
       setTranslateXValue((prevValue) => prevValue + 180);
     }
   };
 
   const handlePrevSlide = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+      setCurrentIndex((prevIndex) => prevIndex - 1);
       setTranslateXValue((prevValue) => prevValue - 180);
     }
   };
