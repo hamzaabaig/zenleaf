@@ -7,7 +7,7 @@ import LeftSidebar from "../common/leftSidebar/LeftSidebar";
 
 const Layout = () => {
   return (
-    <div className="px-6 lg:px-10">
+    <div className="px-6 lg:px-10 max-w-screen-2xl w-full ms-auto me-auto">
       <BlogHeader />
       <HeroSection />
       <Slider />
