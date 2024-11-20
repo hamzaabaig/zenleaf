@@ -1,4 +1,13 @@
 import React, { useState } from "react";
+import LeftArrowIcon from "../../assets/svgs/LeftArrowIcon";
+import RightArrowIcon from "../../assets/svgs/RightArrowIcon";
+import {
+  Wrapper,
+  ForwardBtn,
+  PrevBtn,
+  SlideItem,
+  SliderContent,
+} from "./style";
 
 const slideText = [
   "All Categories",
@@ -38,70 +47,29 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex items-center mb-5 sticky top-0 bg-white z-30">
-      <button
-        className={`${
-          currentIndex === 0 && "hidden"
-        } flex justify-center items-center p-3 hover:scale-125 transition-all duration-150`}
-        onClick={handlePrevSlide}
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M15 19L8 12L15 5"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></path>
-        </svg>
-      </button>
+    <Wrapper>
+      <PrevBtn currentIndex={currentIndex} onClick={handlePrevSlide}>
+        <LeftArrowIcon />
+      </PrevBtn>
 
       <div className="overflow-hidden w-full">
-        <div
-          className="flex gap-5 py-4 items-center transition-all duration-500 ease-in-out"
+        <SliderContent
           style={{
             transform: `translateX(-${translateXValue}px)`,
           }}
         >
           {slideText.map((text, index) => (
-            <a
-              key={index}
-              href="#"
-              className="bg-gray-100 text-center w-40 py-2 font-bold transition-all duration-150 rounded-md border-2 flex-shrink-0 border-gray-400 hover:border-black hover:bg-gray-200"
-            >
+            <SlideItem key={index} href="#">
               {text}
-            </a>
+            </SlideItem>
           ))}
-        </div>
+        </SliderContent>
       </div>
 
-      <button
-        className="flex justify-center items-center p-3 ml-auto hover:scale-125 transition-all duration-150"
-        onClick={handleNextSlide}
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 5L16 12L9 19"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></path>
-        </svg>
-      </button>
-    </div>
+      <ForwardBtn onClick={handleNextSlide}>
+        <RightArrowIcon />
+      </ForwardBtn>
+    </Wrapper>
   );
 };
 
