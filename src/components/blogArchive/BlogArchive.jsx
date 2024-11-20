@@ -1,33 +1,40 @@
 import React from "react";
 import cardImg from "../../assets/images/blogArchiveImg.jpg";
+import {
+  BlogPostContainer,
+  BlogPost,
+  TagsItem,
+  TagsList,
+  LoadMorePostsBtn,
+  PostToFbBtn,
+  PostToXBtn,
+  ShareButtonsContainer,
+} from "./style";
 
 const BlogArchive = () => {
   return (
-    <div className="col-span-9">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-4">
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+    <div className="col-span-9 pb-3">
+      <BlogPostContainer>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">CBD</li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+            <TagsItem>CBD</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
           <p className="text-gray-800">
             Discover the differences between BHO and Rosin as we compare these
-            two popular cannabis concentrates.
+            two popular cannabis concentrates and the differences between BHO
+            and Ros.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             CBC vs. CBD: What’s the Difference Between These Two Cannabinoids?
           </h3>
@@ -38,15 +45,13 @@ const BlogArchive = () => {
             explore why Green Wednesday should be on your radar and how you can
             make the most of it.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">CBD</li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+            <TagsItem>CBD</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
@@ -54,15 +59,13 @@ const BlogArchive = () => {
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">CBD</li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+            <TagsItem>CBD</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
@@ -70,14 +73,12 @@ const BlogArchive = () => {
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             CBC vs. CBD: What’s the Difference Between These Two Cannabinoids?
           </h3>
@@ -88,15 +89,13 @@ const BlogArchive = () => {
             explore why Green Wednesday should be on your radar and how you can
             make the most of it.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">CBD</li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+            <TagsItem>CBD</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
@@ -104,15 +103,13 @@ const BlogArchive = () => {
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">CBD</li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+            <TagsItem>CBD</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
@@ -120,14 +117,12 @@ const BlogArchive = () => {
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             CBC vs. CBD: What’s the Difference Between These Two Cannabinoids?
           </h3>
@@ -138,15 +133,13 @@ const BlogArchive = () => {
             explore why Green Wednesday should be on your radar and how you can
             make the most of it.
           </p>
-        </div>
-        <div className="border-2 border-gray-200 p-4 rounded-md hover:border-black cursor-pointer space-y-4">
+        </BlogPost>
+        <BlogPost>
           <img className="rounded-md" src={cardImg} />
-          <ul className="flex gap-3 items-center">
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">
-              Canbis 101
-            </li>
-            <li className="bg-gray-100 py-2 px-3 font-bold rounded">CBD</li>
-          </ul>
+          <TagsList>
+            <TagsItem>Canbis 101</TagsItem>
+            <TagsItem>CBD</TagsItem>
+          </TagsList>
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
@@ -154,17 +147,15 @@ const BlogArchive = () => {
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
-        </div>
-      </div>
+        </BlogPost>
+      </BlogPostContainer>
       <div className="flex justify-center mb-4">
-        <button className="py-4 px-10 text-white text-lg font-semibold rounded-md bg-[#4d664d] hover:bg-[#b5ccb5] hover:text-black transition-all duration-150">
-          Load More Posts
-        </button>
+        <LoadMorePostsBtn>Load More Posts</LoadMorePostsBtn>
       </div>
       <div className="lg:hidden">
         <span className="font-bold ml-3">Share</span>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <button className="flex justify-start items-center hover:bg-[#1877F2] hover:text-white transition-all duration-200 border border-gray-200 rounded-md py-4 px-7">
+        <ShareButtonsContainer>
+          <PostToFbBtn>
             <svg
               class="mr-6 inline"
               width="24"
@@ -179,8 +170,8 @@ const BlogArchive = () => {
               ></path>
             </svg>
             <span className="font-bold">Post To Facebook</span>
-          </button>
-          <button className="flex justify-start items-center hover:bg-[#1DA1F2] hover:text-white transition-all duration-200 border border-gray-200 rounded-md py-4 px-7">
+          </PostToFbBtn>
+          <PostToXBtn>
             <svg
               class="mr-6 inline size-6"
               role="img"
@@ -193,8 +184,8 @@ const BlogArchive = () => {
               ></path>
             </svg>
             <span className="font-bold">Post to X</span>
-          </button>
-        </div>
+          </PostToXBtn>
+        </ShareButtonsContainer>
       </div>
     </div>
   );
