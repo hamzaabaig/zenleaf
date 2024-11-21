@@ -66,11 +66,11 @@ const LeftSidebar = () => {
       </div>
       <BoldText styles={tw`ml-3`}>Share</BoldText>
       <div className="flex flex-col gap-4">
-        <PostToFbBtn>
+        <PostToFbBtn aria-label="Post to Facebook">
           <FacebookIcon className="mr-6" />
           <BoldText>Post To Facebook</BoldText>
         </PostToFbBtn>
-        <PostToXBtn>
+        <PostToXBtn aria-label="Post to X">
           <XIcon className="mr-6" />
           <BoldText>Post to X</BoldText>
         </PostToXBtn>

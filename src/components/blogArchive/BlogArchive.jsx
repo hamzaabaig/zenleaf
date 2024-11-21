@@ -10,6 +10,8 @@ import {
   PostToXBtn,
   ShareButtonsContainer,
 } from "./style";
+import XIcon from "../../assets/svgs/XIcon";
+import FacebookIcon from "../../assets/svgs/FBIcon";
 
 const BlogArchive = () => {
   return (
@@ -155,34 +157,12 @@ const BlogArchive = () => {
       <div className="lg:hidden">
         <span className="font-bold ml-3">Share</span>
         <ShareButtonsContainer>
-          <PostToFbBtn>
-            <svg
-              class="mr-6 inline"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.0352 13.125L16.5273 9.89062H13.3984V7.78125C13.3984 6.86719 13.8203 6.02344 15.2266 6.02344H16.668V3.24609C16.668 3.24609 15.3672 3 14.1367 3C11.5703 3 9.88281 4.58203 9.88281 7.39453V9.89062H7V13.125H9.88281V21H13.3984V13.125H16.0352Z"
-                fill="currentColor"
-              ></path>
-            </svg>
+          <PostToFbBtn aria-label="Post to Facebook">
+            <FacebookIcon className="mr-6" />
             <span className="font-bold">Post To Facebook</span>
           </PostToFbBtn>
-          <PostToXBtn>
-            <svg
-              class="mr-6 inline size-6"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-                fill="currentColor"
-              ></path>
-            </svg>
+          <PostToXBtn aria-label="Post to X">
+            <XIcon className="mr-6" />
             <span className="font-bold">Post to X</span>
           </PostToXBtn>
         </ShareButtonsContainer>
