@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PostToFbBtn, PostToXBtn } from "../../blogArchive/style";
+import Button from "../button/Button";
 import DownArrowIcon from "../../../assets/svgs/DownArrowIcon";
 import UpArrowIcon from "../../../assets/svgs/UpArrowIcon";
 import FacebookIcon from "../../../assets/svgs/FBIcon";
@@ -66,14 +66,19 @@ const LeftSidebar = () => {
       </div>
       <BoldText styles={tw`ml-3`}>Share</BoldText>
       <div className="flex flex-col gap-4">
-        <PostToFbBtn aria-label="Post to Facebook">
-          <FacebookIcon className="mr-6 h-6 w-6" />
-          <BoldText>Post To Facebook</BoldText>
-        </PostToFbBtn>
-        <PostToXBtn aria-label="Post to X">
-          <XIcon className="mr-6 h-6 w-6" />
-          <BoldText>Post to X</BoldText>
-        </PostToXBtn>
+        <Button
+          className={"hover:bg-blue hover:text-white active:bg-darkBlue"}
+          svg={<FacebookIcon className={"h-6 w-6"} />}
+          svgPosition="start"
+          text="Post To Facebook"
+          onClick={() => alert("Button clicked!")}
+        />
+        <Button
+          className={"hover:bg-skyBlue hover:text-white active:bg-brightBlue"}
+          svg={<XIcon className={"h-6 w-6"} />}
+          svgPosition="start"
+          text="Post To X"
+        />
       </div>
     </Wrapper>
   );

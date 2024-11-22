@@ -6,12 +6,11 @@ import {
   TagsItem,
   TagsList,
   LoadMorePostsBtn,
-  PostToFbBtn,
-  PostToXBtn,
   ShareButtonsContainer,
 } from "./style";
 import XIcon from "../../assets/svgs/XIcon";
 import FacebookIcon from "../../assets/svgs/FBIcon";
+import Button from "../common/button/Button";
 
 const BlogArchive = () => {
   return (
@@ -157,14 +156,19 @@ const BlogArchive = () => {
       <div className="lg:hidden">
         <span className="font-bold ml-3">Share</span>
         <ShareButtonsContainer>
-          <PostToFbBtn aria-label="Post to Facebook">
-            <FacebookIcon className="mr-6 h-6 w-6" />
-            <span className="font-bold">Post To Facebook</span>
-          </PostToFbBtn>
-          <PostToXBtn aria-label="Post to X">
-            <XIcon className="mr-6 h-6 w-6" />
-            <span className="font-bold">Post to X</span>
-          </PostToXBtn>
+          <Button
+            className={"hover:bg-blue hover:text-white active:bg-darkBlue"}
+            svg={<FacebookIcon className={"h-6 w-6"} />}
+            svgPosition="start"
+            text="Post To Facebook"
+            onClick={() => alert("Button clicked!")}
+          />
+          <Button
+            className={"hover:bg-skyBlue hover:text-white active:bg-brightBlue"}
+            svg={<XIcon className={"h-6 w-6"} />}
+            svgPosition="start"
+            text="Post To X"
+          />
         </ShareButtonsContainer>
       </div>
     </div>

@@ -36,35 +36,11 @@ const ShareButtonsContainer = styled.div`
   ${tw`grid grid-cols-1 sm:grid-cols-2 gap-2`}
 `;
 
-const ShareButtonsBase = styled.button`
-  ${tw`flex justify-start items-center border border-gray-200 rounded-md py-4 px-7 transition-all duration-200`}
-`;
-
-const PostToFbBtn = styled(ShareButtonsBase)`
-  &:hover {
-    ${tw`bg-blue text-white`}
-  }
-  &:active {
-    ${tw`bg-darkBlue`}
-  }
-`;
-
-const PostToXBtn = styled(ShareButtonsBase)`
-  &:hover {
-    ${tw`bg-skyBlue text-white`}
-  }
-  &:active {
-    ${tw`bg-brightBlue`}
-  }
-`;
-
 export {
   BlogPostContainer,
   BlogPost,
   TagsItem,
   TagsList,
   LoadMorePostsBtn,
-  PostToFbBtn,
-  PostToXBtn,
   ShareButtonsContainer,
 };
