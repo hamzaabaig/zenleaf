@@ -50,10 +50,10 @@ const LeftSidebar = () => {
         <StatesDropdownBtn onClick={handleStatesDropdown}>
           <span>{dropdownButtonText}</span>
           <DownArrowIcon
-            className={`${showStatesDropdown ? "hidden" : "block"}`}
+            className={`${showStatesDropdown ? "hidden" : "block"} w-6 h-6`}
           />
           <UpArrowIcon
-            className={`${showStatesDropdown ? "block" : "hidden"}`}
+            className={`${showStatesDropdown ? "block" : "hidden"} w-6 h-6`}
           />
         </StatesDropdownBtn>
         <StatesDropdownMenu showStatesDropdown={showStatesDropdown}>
@@ -67,11 +67,11 @@ const LeftSidebar = () => {
       <BoldText styles={tw`ml-3`}>Share</BoldText>
       <div className="flex flex-col gap-4">
         <PostToFbBtn aria-label="Post to Facebook">
-          <FacebookIcon className="mr-6" />
+          <FacebookIcon className="mr-6 h-6 w-6" />
           <BoldText>Post To Facebook</BoldText>
         </PostToFbBtn>
         <PostToXBtn aria-label="Post to X">
-          <XIcon className="mr-6" />
+          <XIcon className="mr-6 h-6 w-6" />
           <BoldText>Post to X</BoldText>
         </PostToXBtn>
       </div>

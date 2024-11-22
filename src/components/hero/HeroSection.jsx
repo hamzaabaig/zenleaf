@@ -31,7 +31,7 @@ const HeroSection = () => {
           On{" "}
           <a
             href="#"
-            className="font-bold text-gray-800 hover:text-black hover:underline"
+            className="font-bold text-darkGray hover:text-primary hover:underline"
           >
             November 15, 2024
           </a>

@@ -9,9 +9,9 @@ const BlogHeader = () => {
       <BreadcrumbList>
         <li className="flex items-center">
           <a href="#">
-            <HouseIcon />
+            <HouseIcon className={"h-5 w-5 flex-shrink-0 "} />
           </a>
-          <ForwardSlashIcon />
+          <ForwardSlashIcon className={"h-5 w-5 flex-shrink-0"} />
         </li>
         <li className="font-bold">Blog</li>
       </BreadcrumbList>

@@ -3,11 +3,12 @@ import BlogHeader from "../blogHeader/BlogHeader";
 import HeroSection from "../hero/HeroSection";
 import Slider from "../slider/Slider";
 import BlogArchive from "../blogArchive/BlogArchive";
+import { Wrapper } from "./style";
 import LeftSidebar from "../common/leftSidebar/LeftSidebar";
 
 const Layout = () => {
   return (
-    <div className="px-6 lg:px-10 max-w-screen-2xl w-full ms-auto me-auto">
+    <Wrapper>
       <BlogHeader />
       <HeroSection />
       <Slider />
@@ -15,7 +16,7 @@ const Layout = () => {
         <LeftSidebar />
         <BlogArchive />
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

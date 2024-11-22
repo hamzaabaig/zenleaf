@@ -1,9 +1,9 @@
 import React from "react";
 
-const ForwardSlashIcon = () => {
+const ForwardSlashIcon = ({ className }) => {
   return (
     <svg
-      className="h-5 w-5 flex-shrink-0"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       viewBox="0 0 20 20"

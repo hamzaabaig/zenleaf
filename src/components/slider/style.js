@@ -24,9 +24,9 @@ const SliderContent = styled.div`
 `;
 
 const SlideItem = styled.a`
-  ${tw`bg-gray-100 text-center w-40 py-2 font-bold transition-all duration-150 rounded-md border-2 flex-shrink-0 border-gray-400`}
+  ${tw`bg-lightGray text-secondary text-center w-40 py-2 font-bold transition-all duration-150 rounded-md border-2 flex-shrink-0 border-mediumGray`}
   &:hover {
-    ${tw`border-black bg-gray-200`}
+    ${tw`border-primary bg-softGray text-primary`}
   }
 `;
 

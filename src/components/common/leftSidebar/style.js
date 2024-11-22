@@ -15,16 +15,19 @@ const BoldText = styled.span`
 `;
 
 const StatesDropdownMenu = styled.ul`
-  ${tw`absolute pt-3 w-full bg-white border border-gray-200`}
+  ${tw`absolute pt-3 w-full rounded-md bg-white border-[1px] border-softGray`}
   ${({ showStatesDropdown }) => (showStatesDropdown ? tw`block` : tw`hidden`)}
 `;
 
 const StatesDropdownItem = styled.li`
-  ${tw`cursor-pointer pb-2 px-5 transition-all duration-200 hover:scale-105`}
+  ${tw`cursor-pointer text-primary pb-2 px-5 transition-all duration-200`}
+  &:hover {
+    ${tw`scale-105`}
+  }
 `;
 
 const SearchBlogField = styled.input`
-  ${tw`py-4 px-7 border border-gray-200 rounded-md`}
+  ${tw`py-4 px-7 border-2 border-softGray rounded-md`}
 `;
 
 export {

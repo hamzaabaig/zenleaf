@@ -26,7 +26,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates and the differences between BHO
             and Ros.
@@ -40,7 +40,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             CBC vs. CBD: What’s the Difference Between These Two Cannabinoids?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Have you recently heard of Green Wednesday and are curious about
             what it is? Well mark your calendars because Green Wednesday is a
             cannabis holiday packed with soul should deals and good vibes. Let’s
@@ -57,7 +57,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
@@ -71,7 +71,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
@@ -84,7 +84,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             CBC vs. CBD: What’s the Difference Between These Two Cannabinoids?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Have you recently heard of Green Wednesday and are curious about
             what it is? Well mark your calendars because Green Wednesday is a
             cannabis holiday packed with soul should deals and good vibes. Let’s
@@ -101,7 +101,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
@@ -115,7 +115,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
@@ -128,7 +128,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             CBC vs. CBD: What’s the Difference Between These Two Cannabinoids?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Have you recently heard of Green Wednesday and are curious about
             what it is? Well mark your calendars because Green Wednesday is a
             cannabis holiday packed with soul should deals and good vibes. Let’s
@@ -145,7 +145,7 @@ const BlogArchive = () => {
           <h3 className="text-xl font-bold hover:underline">
             Butane Hash Oil (BHO) vs. Rosin: What’s the Difference?
           </h3>
-          <p className="text-gray-800">
+          <p className="text-darkGray">
             Discover the differences between BHO and Rosin as we compare these
             two popular cannabis concentrates.
           </p>
@@ -158,11 +158,11 @@ const BlogArchive = () => {
         <span className="font-bold ml-3">Share</span>
         <ShareButtonsContainer>
           <PostToFbBtn aria-label="Post to Facebook">
-            <FacebookIcon className="mr-6" />
+            <FacebookIcon className="mr-6 h-6 w-6" />
             <span className="font-bold">Post To Facebook</span>
           </PostToFbBtn>
           <PostToXBtn aria-label="Post to X">
-            <XIcon className="mr-6" />
+            <XIcon className="mr-6 h-6 w-6" />
             <span className="font-bold">Post to X</span>
           </PostToXBtn>
         </ShareButtonsContainer>

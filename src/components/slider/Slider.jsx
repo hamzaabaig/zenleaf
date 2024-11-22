@@ -49,7 +49,7 @@ const Slider = () => {
   return (
     <Wrapper>
       <PrevBtn currentIndex={currentIndex} onClick={handlePrevSlide}>
-        <LeftArrowIcon />
+        <LeftArrowIcon className={"w-6 h-6"} />
       </PrevBtn>
 
       <div className="overflow-hidden w-full">
@@ -67,7 +67,7 @@ const Slider = () => {
       </div>
 
       <ForwardBtn onClick={handleNextSlide}>
-        <RightArrowIcon />
+        <RightArrowIcon className={"w-6 h-6"} />
       </ForwardBtn>
     </Wrapper>
   );

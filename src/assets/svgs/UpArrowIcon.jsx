@@ -2,8 +2,6 @@ import React from "react";
 
 const UpArrowIcon = ({ className }) => (
   <svg
-    width="20"
-    height="20"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
     className={className}

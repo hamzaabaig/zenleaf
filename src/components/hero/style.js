@@ -14,12 +14,12 @@ const ImageWrapper = styled.div`
 `;
 
 const ReadMoreButton = styled.button`
-  ${tw`text-white max-w-max bg-black px-8 py-4 rounded transition-all duration-200`}
+  ${tw`text-white max-w-max bg-primary font-bold px-8 py-4 rounded-md transition-all duration-200`}
   &:hover {
-    ${tw`bg-gray-800`}
+    ${tw`bg-darkGray`}
   }
   &:active {
-    ${tw`bg-gray-900`}
+    ${tw`bg-secondary`}
   }
 `;
 

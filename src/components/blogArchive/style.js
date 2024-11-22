@@ -6,10 +6,10 @@ const BlogPostContainer = styled.div`
 `;
 
 const BlogPost = styled.div`
-  ${tw`border-2 border-gray-200 p-4 rounded-md transition-all duration-200 cursor-pointer space-y-4`}
+  ${tw`border-2 border-mediumGray p-4 rounded-md transition-all duration-200 cursor-pointer space-y-4`}
 
   &:hover {
-    ${tw`border-black`}
+    ${tw`border-primary`}
   }
 `;
 
@@ -18,17 +18,17 @@ const TagsList = styled.ul`
 `;
 
 const TagsItem = styled.li`
-  ${tw`bg-gray-100 py-2 px-3 font-bold rounded`}
+  ${tw`bg-lightGray bg-opacity-60 py-2 px-3 font-bold rounded-md text-secondary`}
 `;
 
 const LoadMorePostsBtn = styled.button`
-  ${tw`py-4 px-10 text-white text-lg font-semibold rounded-md bg-[#4d664d] transition-all duration-150`}
+  ${tw`py-4 px-10 text-white text-lg font-semibold rounded-md bg-lightGreen transition-all duration-150`}
 
   &:hover {
-    ${tw`bg-[#b5ccb5] text-black`}
+    ${tw`bg-green text-primary`}
   }
   &:active {
-    ${tw`bg-[#79a579]`}
+    ${tw`bg-mutedGreen`}
   }
 `;
 
@@ -42,19 +42,19 @@ const ShareButtonsBase = styled.button`
 
 const PostToFbBtn = styled(ShareButtonsBase)`
   &:hover {
-    ${tw`bg-[#346cb6] text-white`}
+    ${tw`bg-blue text-white`}
   }
   &:active {
-    ${tw`bg-[#215293]`}
+    ${tw`bg-darkBlue`}
   }
 `;
 
 const PostToXBtn = styled(ShareButtonsBase)`
   &:hover {
-    ${tw`bg-[#1DA1F2] text-white`}
+    ${tw`bg-skyBlue text-white`}
   }
   &:active {
-    ${tw`bg-[#028ee3]`}
+    ${tw`bg-brightBlue`}
   }
 `;
 
